@@ -14,7 +14,7 @@ public class BuscaContatos {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("contatos");
 		EntityManager manager = factory.createEntityManager();
 		
-		Query query = manager.createQuery("select c from Contato");
+		Query query = manager.createQuery("select c from Contato as c");
 		
 //		query.setParameter("paramFinalizado", true);
 		
